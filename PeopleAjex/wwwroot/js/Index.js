@@ -20,7 +20,7 @@
     }
 
     $('#add-person').click(function () {
-        person = {
+        let person = {
             firstName: $('#first-name').val(),
             lastName: $('#last-name').val(),
             age: $('#age').val(),
@@ -47,7 +47,7 @@
     });
 
     $('#submit-edit').click(function () {
-        person = {
+        let person = {
             firstName: $('#first-name-edit').val(),
             lastName: $('#last-name-edit').val(),
             age: $('#age-edit').val(),

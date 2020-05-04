@@ -1,0 +1,53 @@
+﻿<div class="row">
+    <div class="col-md-3">
+        <input type="text" id="first-name" class="form-control" placeholder="First Name" />
+    </div>
+    <div class="col-md-3">
+        <input type="text" id="last-name" class="form-control" placeholder="Last Name" />
+    </div>
+    <div class="col-md-3">
+        <input type="text" id="age" class="form-control" placeholder="Age" />
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-primary btn-block" id="add-person">Add Person</button>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped" style="margin-top:20px">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+</table>
+
+<div id="edit-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Person</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input id="first-name-edit" class="form-control" name="FirstName" placeholder="First Name" required style="margin:5px" />
+                <input id="last-name-edit" class="form-control" name="LastName" placeholder="Last Name" required style="margin:5px" />
+                <input id="age-edit" class="form-control" name="Age" placeholder="Age" required style="margin:5px" />
+                <input id="id-edit" class="form-control" name="ID" type="hidden" style="margin:5px" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button id="submit-edit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/js/Index.js"></script>
+}
